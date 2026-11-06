@@ -1,0 +1,27 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+.claude/settings.local.json
+# Local source data and generated outputs
+*.csv
+!examples/synthetic_loans.csv
+data/
+!demo/data/
+!demo/data/prospects.json
+pipeline_runs/
+market_recent_loans.csv
+refi_window_prospects.csv
+# Dependencies and build artifacts
+node_modules/
+.next/
+.vercel/
+.venv/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.coverage
+.pytest_cache/

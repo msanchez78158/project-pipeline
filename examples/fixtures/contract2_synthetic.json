@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "run_date": "2026-11-06",
+    "data_as_of": "2026-11-06 (synthetic fixture only)",
+    "period_label": "SYNTHETIC 2026-Q4"
+  },
+  "executive_summary": {
+    "total_new_loans": 1,
+    "total_new_volume": 600000,
+    "top_county_by_volume": "ST. LOUIS",
+    "dominant_sector": "Healthcare",
+    "most_active_competitor": "SYNTHETIC HARBOR BANK",
+    "refi_candidates_total": 1,
+    "refi_candidates_high_priority": 1
+  },
+  "competitor_intelligence": {
+    "lender_rankings": [
+      {
+        "lender_name": "SYNTHETIC HARBOR BANK",
+        "loan_count": 1,
+        "total_volume": 600000,
+        "dominant_sector": "Healthcare",
+        "trend": "stable",
+        "notable": "Single synthetic observation; trend is a mock response, not a measured comparison."
+      }
+    ],
+    "market_share_by_county": {
+      "FRANKLIN": [],
+      "ST. LOUIS": [
+        {
+          "lender_name": "SYNTHETIC HARBOR BANK",
+          "pct_of_loans": 100
+        }
+      ],
+      "ST. LOUIS CITY": []
+    }
+  },
+  "sector_breakdown": [
+    {
+      "naics_sector": "Healthcare",
+      "loan_count": 1,
+      "total_volume": 600000,
+      "avg_loan_size": 600000,
+      "pct_of_quarter": 100,
+      "quarter_over_quarter_change": null,
+      "top_county": "ST. LOUIS"
+    }
+  ],
+  "priority_prospects": [
+    {
+      "rank": 1,
+      "borrower_name": "SYNTHETIC CEDAR TOOLWORKS LLC",
+      "borrower_city": "Exampleville",
+      "borrower_street": "101 Fictional Foundry Lane",
+      "borrower_zip": "00000",
+      "county": "FRANKLIN",
+      "list_type": "refi_window",
+      "lender_name": "SYNTHETIC PRAIRIE BANK",
+      "loan_amount": 750000,
+      "months_since_approval": 26,
+      "naics_description": "Machine Shops",
+      "priority_score": 100,
+      "priority_rationale": {
+        "loan_amount_pts": 40,
+        "refi_window_pts": 30,
+        "county_pts": 20,
+        "sector_pts": 10,
+        "total": 100
+      },
+      "suggested_action": "Synthetic example: verify terms before considering outreach.",
+      "initial_interest_rate": 11.5,
+      "rate_type": "FIXED",
+      "estimated_maturity_date": "2034-09-06",
+      "rate_delta": 2.0,
+      "rate_delta_label": "+2.0% above historical benchmark"
+    }
+  ],
+  "new_loans_watch_list": [
+    {
+      "rank": 1,
+      "borrower_name": "SYNTHETIC MAPLE CLINIC LLC",
+      "borrower_city": "Sampleton",
+      "borrower_street": "202 Fictional Care Avenue",
+      "borrower_zip": "00000",
+      "county": "ST. LOUIS",
+      "list_type": "new_loan",
+      "lender_name": "SYNTHETIC HARBOR BANK",
+      "loan_amount": 600000,
+      "approval_date": "2026-10-06",
+      "naics_description": "Physician Offices",
+      "watch_score": 82,
+      "watch_rationale": {
+        "loan_amount_pts": 50,
+        "county_pts": 12,
+        "sector_pts": 20,
+        "total": 82
+      },
+      "suggested_action": "Synthetic example: monitor the relationship opportunity.",
+      "initial_interest_rate": 10,
+      "rate_type": "VARIABLE",
+      "estimated_maturity_date": "2036-10-06",
+      "rate_delta": 0.5,
+      "rate_delta_label": "+0.5% above historical benchmark (variable rate \u2014 origination rate only)"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg-primary:     #FDFAF5;
+  --color-bg-section:     #F5EFE4;
+  --color-bg-card:        #EDE4D3;
+  --color-bg-tint:        #F0E0C8;
+  --color-copper-core:    #C17A2A;
+  --color-copper-light:   #D4892E;
+  --color-copper-deep:    #9A5F1A;
+  --color-copper-tint:    #F0E0C8;
+  --color-text-ink:       #1C1410;
+  --color-text-charcoal:  #3D2E22;
+  --color-text-stone:     #7A6A58;
+  --color-text-dust:      #B0A090;
+  --color-alert:          #C0392B;
+  --color-amber:          #D68910;
+  --color-forest:         #27734A;
+  --color-border-light:   #E8DDD0;
+  --color-border-medium:  #D4C4B0;
+  --color-border-copper:  #C17A2A;
+  --font-serif:           'EB Garamond', Georgia, serif;
+  --font-sans:            'Inter', system-ui, sans-serif;
+  --font-mono:            'JetBrains Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono) !important; }
+.font-sans  { font-family: var(--font-sans)  !important; }
+.font-serif { font-family: var(--font-serif) !important; }
+
+.copper-rule {
+  border-bottom: 2px solid var(--color-copper-core);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-section); }
+::-webkit-scrollbar-thumb { background: var(--color-border-medium); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-copper-core); }
+
+.prospect-row { transition: background 0.12s ease; cursor: pointer; }
+.prospect-row:hover { background: var(--color-bg-tint) !important; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.3s ease forwards; }
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, var(--color-bg-card) 25%, var(--color-bg-tint) 50%, var(--color-bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
